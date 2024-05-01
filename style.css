@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f7f9fd;
+}
+
+.container {
+  width: 90%;
+  max-width: 992px;
+  margin: auto;
+}
+
+.add-card-con {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 30px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.add-card-con button,
+.modal button{
+  font-size: 15px;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem 20px 10px;
+  width: 31%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.task {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #2d3140;
+  word-wrap: break-word;
+}
+
+.Desc {
+  font-weight: 400;
+  color: #2d3140;
+  word-wrap: break-word;
+  margin: 10px 0 14px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.show-hide-btn {
+  font-size: 15px;
+  background-color: #4caf50;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btns-con {
+  text-align: right;
+}
+
+.edit-btn,
+.delete-btn {
+  font-size: 20px;
+  background-color: transparent;
+  margin: 10px 4px;
+}
+
+.edit-btn {
+  color: #4caf50;
+}
+
+.delete-btn {
+  color: #f34444;
+}
+
+.modal {
+  width: 90%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 35px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #2d3140;
+  margin-bottom: 50px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+#error {
+  color: #f34444;
+}
+
+#close-btn {
+  font-size: 22px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+label {
+  color: #2d3140;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: none;
+  transition: all 0.3s ease;
+}
+
+textarea:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+textarea:focus {
+  border-color: #2d3140;
+}
+
+.hide {
+  display: none;
+}
+
+.add-card-con button:hover, 
+.modal button:hover,
+#close-btn:hover,
+.show-hide-btn:hover {
+  background-color: #368339 !important;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 10px 0 30px;
+  }
+  .card {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  body {
+    font-size: 14px;
+    padding: 10px 0 30px;
+    overflow-y: scroll;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
